@@ -97,6 +97,41 @@ form input[type="submit"] {
   margin-bottom: 20px;
 }
 
+.upload-container {
+  margin: 20px 0;
+}
+
+#imageUpload {
+  margin: 20px 0;
+}
+
+#imageDisplayArea {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#imageDisplayArea img {
+  max-width: 100px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.upload-button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
 footer {
   background: #333;
   color: #fff;

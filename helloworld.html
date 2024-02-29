@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="styles.css" rel="stylesheet" />
+    <script src="https://www.static.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
   </head>
   <body>
     <header>
@@ -18,9 +20,10 @@
     <nav>
       <ul>
         <li>
-          <a href="#section1">Section 1</a>
-          <a href="#section2">Section 2</a>
-          <a href="#section3">Section 3</a>
+          <a href="#section1">Introduction to HTML</a>
+          <a href="#section2">Basic HTML tags</a>
+          <a href="#section3">Forms and Tables</a>
+          <a href="#section4">Upload</a>
         </li>
       </ul>
     </nav>
@@ -95,11 +98,25 @@
           </tr>
         </table>
       </section>
+
+      <section id="section4">
+        <h2>Upload and view images</h2>
+        <div class="upload-container">
+          <input type="file" id="imageUpload()" accept="image/*" multiple />
+          <button class="upload-button" onclick="uploadImages()">
+            Upload Images
+          </button>
+        </div>
+        <div id="imageDisplayArea">
+          <p>No images uploaded yet.</p>
+        </div>
+      </section>
     </main>
 
     <!-- This is our footer section -->
     <footer>
       <p>Contact us, we are developers</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
